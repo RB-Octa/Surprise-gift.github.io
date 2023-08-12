@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    /* min-height: 100vh; */
+    background-color: #eff0f4;
+}
+.design{
+    float: left;
+    width: 45%;
+}
+.design{
+    margin-top: 10%;
+    padding-top: 20px;
+    /* text-align: center; */
+}
+.design h1{
+    color: #3f3737;
+    padding-left: 30%;
+    width: 6em;
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+.design h3{
+    padding-left: 30%;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #4790FC;
+}
+.design .O-drop{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: #4790FC;
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 0.1em;
+        font-size: 0.9em;
+        transition: 0.5s;
+        box-shadow: inset 2px 2px 2px rgba(190, 1, 254, 0.05), 
+        8px 15px 5px rgba(190, 1, 254, 0.1), 
+        5px 20px 20px rgba(190, 1, 254, 0.1);
+        /* inset -10px -10px 15px rgba(225, 225, 225, 0.5); */
+        border-radius: 41% 59% 74% 26% / 60% 52% 48% 40%;
+}
+.design .O-drop::before{
+    content:'';
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.45;
+}
+.design .O-drop:hover{
+    border-radius: 50%;
+}
+.design h2{
+    padding-left: 31%;
+    color: #3f3737;
+}
+
+.main-body{
+    /* clear: both; */
+    float: right;
+    width: 55%;
+}
+
+.main-body{
+    margin-top: 10%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+.container {
+    padding-left: 15%;
+    position: relative;
+    left: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .drop{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05), 
+    25px 35px 20px rgba(0, 0, 0, 0.05), 
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(225, 225, 225, 0.9);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 66% 34% 30% 70% / 36% 56% 44% 64% ;
+}
+.container .drop:hover{
+    border-radius: 50%;
+}
+.container .drop::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 85px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.9;
+}
+.container .drop::after{
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 110px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.9;
+}
+.container .drop .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+}
+.container .drop .content h2{
+    position: relative;
+    color: #333;
+    font-size: 1.5em;
+}
+.container .drop .content form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+}
+.container .drop .content form .inputBox{
+    position: relative;
+    width: 225px;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.01), 
+    inset -2px -5px 10px rgba(255, 255, 255, 1),
+    15px 15px 10px rgba(0, 0, 0, 0.05), 
+    15px 10px 15px rgba(0, 0, 0, 0.025);
+    border-radius: 25px;
+}
+.container .drop .content form .inputBox::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.container .drop .content form .inputBox input{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+.container .drop .content form .inputBox input [type="submit"]{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+.container .drop .content form .inputBox:last-child{
+    width: 120px;
+    background: #ff0f5b;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.01),
+    15px 15px 10px rgba(0, 0, 0, 0.05), 
+    15px 10px 15px rgba(0, 0, 0, 0.025);
+    transition: 0.5s;
+}
+.container .drop .content form .inputBox:last-child:hover{
+    width: 150px;
+}
+
+.btns{
+    position: absolute;
+    right: -120px;
+    bottom: 0;
+    width: 110px;
+    height: 110px;
+    background: #c61dff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.2em;
+    letter-spacing: 0.1em;
+    font-size: 0.9em;
+    transition: 0.25s;
+    text-align: center;
+    box-shadow: inset 10px 10px 10px rgba(190, 1, 254, 0.05), 
+    15px 25px 10px rgba(190, 1, 254, 0.1), 
+    15px 20px 20px rgba(190, 1, 254, 0.1),
+    inset -10px -10px 15px rgba(225, 225, 225, 0.5);
+    border-radius: 44% 56% 65% 35% / 57% 58% 42% 43% ;
+
+}
+
+.btns::before{
+    content:'';
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.45;
+}
+
+.btns.back{
+    bottom: 150px;
+    right: -140px;
+    width: 80px;
+    height: 80px;
+    border-radius: 63% 37% 35% 65% / 57% 63% 37% 43%;
+    background: #01b4ff;
+    box-shadow: inset 10px 10px 10px rgba(1, 180, 255, 0.05), 
+    15px 25px 10px rgba(1, 180, 255, 0.1), 
+    15px 20px 20px rgba(1, 180, 255, 0.1),
+    inset -10px -10px 15px rgba(225, 225, 225, 0.5);
+}
+.btns.back::before{
+    left: 20px;
+    width: 15px;
+    height: 15px;
+}
+.btns:hover{
+    border-radius: 50%;
+}
+
+
+/* ================background================ */
+
+.box ul li {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	list-style: none;
+	opacity: 0;
+	background: radial-gradient(rgb(255, 80, 80), transparent, transparent);
+	bottom: 0;
+	left: 10vw;
+	animation: animate 15s linear infinite;
+}
+.box ul li:nth-child(2) {
+	left: 36vw;
+	animation-delay: 1.6s;
+}
+.box ul li:nth-child(3) {
+	left: 22vw;
+	animation-delay: 3.8s;
+}
+.box ul li:nth-child(4) {
+	left: 56vw;
+	animation-delay: 5.5s;
+}
+.box ul li:nth-child(5) {
+	left: 76vw;
+	animation-delay: 4s;
+}
+.box ul li:nth-child(6) {
+	left: 80vw;
+	animation-delay: 8s;
+}
+@keyframes animate {
+	0% {
+		transform: scale(0);
+		opacity: 1;
+		bottom: 0;
+	}
+	100% {
+		transform: scale(10);
+		opacity: 0;
+		bottom: 100vh;
+	}
+}
+
+@media  (max-width: 800px) {
+    .design{
+        clear: both;
+        width: 100%;
+        /* min-height: 100vh; */
+    }
+    .design{
+        margin-top: 2%;
+        padding-top: 5px;
+        /* text-align: center; */
+    }
+    .main-body{
+        clear: both;
+        /* float: right; */
+        width: 100%;
+    }
+    
+    .main-body{
+        margin-top: 10%;
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+    
+    }
+}

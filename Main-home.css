@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: boder-box;
+}
+body{
+    /* min-height: 100vh; */
+    font-family: sans-serif;
+    /* background: radial-gradient(#89664E, #6F4E37); */
+    /* background: #C0997F; */
+    /* background: hsl(210, 30%, 0%) radial-gradient( hsl(210, 30%, 20%), hsl(210, 30%, 0%));   */
+    /* background: hsl(0, 6%, 87%) radial-gradient( hsl(180, 20%, 99%), hsl(0, 6%, 87%));   */
+    background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("bg11.jpg");
+    background-attachment: fixed;
+     background-position: center;
+    background-size: cover;
+}
+#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+h3{
+    margin-top: 10%;
+    position: relative;
+    /* font-size: 8rem; */
+    font-size: clamp(2rem, 2rem + 8vw, 8rem);
+    letter-spacing: 10px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+        /* 0%, 18%, 20%, 50.1%, 60%, 99%{ */
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+        color: #f3f0f0;
+        text-shadow: 0 0 10px #C3B1E1,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}
+
+h5{
+    margin-top: 10%;
+    position: relative;
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0004); */
+    line-height: 0.7em;
+}
+.btn{
+    margin-top: 5%;
+    left: 43%;
+    position: relative;
+    /* font-size: 24px; */
+    font-size: clamp(0.3125rem, 0.3125rem + 1.5833vw, 1.5rem);
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #000000;
+    background: #03bcf4;
+    border-radius: 10px;
+    width: 14%;
+    height: 50px;
+}
+.Main-button{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    font-family: consolas;
+}
+h4 a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #61b8ff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: bold;
+    overflow: hidden;
+    transition: 0.2s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+h4 a:hover{
+    color: #255784;
+    background: #0ef;
+    box-shadow: 0 0 10px #61b8ff, 0 0 40px #61b8ff, 0 0 80px #61b8ff;
+    transition-delay: 0.6s;
+}
+h4 span{
+    position: absolute;
+    display: block;
+}
+h4 span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#61b8ff);
+}
+h4:hover span:nth-child(1){
+    left: 100%;
+    transition: 0.5s;
+}
+h4 span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#61b8ff);
+}
+h4:hover span:nth-child(3){
+    right: 100%;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+}
+h4 span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent,#61b8ff);
+}
+h4:hover span:nth-child(2){
+    top: 100%;
+    transition: 0.5s;
+    transition-delay: 0.15s;
+}
+h4 span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent,#61b8ff);
+}
+h4:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0.45s;
+}
+.footer-c{
+    padding-top: 10%;
+    font-size: 15px;
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+}
+p{
+    font-weight: 100;
+    text-decoration: none;
+    color: rgb(31, 177, 177);
+}
+
+
+/* ==================== new style================= */
+#popup{
+    /* position: fixed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 1000;
+}
+.login-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 5px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+.remember-forgot{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+}
+@media(max-width:360px){
+    .login-box{
+        width: 100%;
+        height: 100vh;
+        border: none;
+    }
+}
+
